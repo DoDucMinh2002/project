@@ -648,6 +648,7 @@ h3.my-profession {
     .side{
         width: 100%;
         height: auto;
+        border-right: none;
     }
     .nav{
         display: flex;
@@ -659,7 +660,7 @@ h3.my-profession {
         top: 20px;
     }
     .side .nav{
-        margin-top: 120px;
+        margin-top: 118px;
         border-bottom: 1px solid white;
         width: 100%;
     }
