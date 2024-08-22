@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        .section {
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="side">
+            <div class="logo">
+                <div class="corner-lg"></div>
+                <a href="#"><span>Đ</span>.Minh</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="#home" class="active"><i class="bi bi-house-door-fill"></i> home</a>
+                </li>
+                <li>
+                    <a href="#about"><i class="bi bi-person-bounding-box"></i> About</a>
+                </li>
+                <li>
+                    <a href="#project"><i class="bi bi-list-check"></i> Project</a>
+                </li>
+                <!-- <li>
+                    <a href="#social"><i class="bi bi-globe-asia-australia"></i> Social</a>
+                </li>
+                <li>
+                    <a href="#contact"><i class="bi bi-chat-square-fill"></i>Contact</a>
+                </li> -->
+            </ul>
+        </div>
+        <section class="home section active" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello">Xin cháo, tôi tên là <span class="name">Đỗ Đức Minh</span></h3>
+                        <h3 class="my-profession">
+                            Tôi là một <span class="typing">lập trình viên web</span>
+                        </h3>
+                        <p>
+                            "Tôi đang chuẩn bị tốt nghiệp chuyên ngành công nghệ thông tin (IT) tại trường
+                            đại học Thủy Lợi.Chuyên môn của tôi là tạo và thiết kế trang wed và
+                            nhiều thứ khác..."
+                        </p>
+                        <a href="#about" data-section-index="0" class="btn hire-me"><samp
+                                style="color: white !important;padding-left: 14px;">Xem Thêm</samp>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <div class="corner"></div>
+                        <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.6435-9/145016775_1090958181370467_1437599052405266298_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_ohc=knuvGMW9zFUQ7kNvgH7Kfb-&_nc_ht=scontent.fhan5-2.fna&oh=00_AYBGzU3cwDS-lV313EiDrGr_GwIq4i9lw5eddWm0quI8LQ&oe=66ED1D38"
+                            alt="avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Sơ yếu lý lịch</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>
+                                    Tôi tên là Đỗ Đức Minh là một
+                                    <span>Web Developer</span>
+                                </h3>
+                                <p>
+                                    "Tôi hướng đến việc trở thành một lập trình viên Front-End chuyên nghiệp, có khả năng tạo ra những sản phẩm web chất
+                                    lượng cao và hiệu quả. Tôi rất hứng thú với việc tham gia vào các dự án sáng tạo, nơi tôi có thể áp dụng kiến thức và kỹ
+                                    năng của mình để giải quyết các vấn đề thực tế và mang lại giá trị cho khách hàng."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row row-media">
+                                    <div class="info-item padd-15">
+                                        <p>Ngày sinh: <span>09/03/2002</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Tuổi: <span>22</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Quê quán: <span>Hòa bình</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Bằng cấp: <span>Đại Học (IT)</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Email: <span>doducminh09032002@gmail,com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>SDT: <span></span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Chiều cao: <span>1m82</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Tính cách: <span>Hòa đồng, vui vẻ</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Sở thích: <span>Nge nhạc, đá bóng, lập trình</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#" class="btn hire-me">
+                                            <samp style="margin: auto;">Xem cv</samp>
+                                            <div class="liquid"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 70%;"></div>
+                                            <div class="skill-percent">70%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>ReactJs</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 80%;"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>HTML</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 95%;"></div>
+                                            <div class="skill-percent">95%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>CSS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 75%;"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="project section">
+            <div class="container-project">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Dự Án Đã Làm</h2>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/CRM.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Phần mềm CRM</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="https://github.com/DoDucMinh2002/DDM-CRM.git" class="icon"><i class="bi bi-github"></i></a>
+                            <!-- <a href="" class="icon"><i class="bi bi-globe"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/DDM.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Project</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="" class="icon"><i class="bi bi-github"></i></a>
+                            <a href="" class="icon"><i class="bi bi-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/travel.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Travel</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="" class="icon"><i class="bi bi-github"></i></a>
+                            <a href="" class="icon"><i class="bi bi-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/CRM.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Phần mềm CRM</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="https://github.com/DoDucMinh2002/DDM-CRM.git" class="icon"><i class="bi bi-github"></i></a>
+                            <!-- <a href="" class="icon"><i class="bi bi-globe"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/DDM.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Project</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="" class="icon"><i class="bi bi-github"></i></a>
+                            <a href="" class="icon"><i class="bi bi-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="img-content">
+                                <img src="./image/travel.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="heading">Travel</p>
+                            </div>
+                        </div>
+                        <div class="card-icon">
+                            <a href="" class="icon"><i class="bi bi-github"></i></a>
+                            <a href="" class="icon"><i class="bi bi-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="social" class="social section"> Social Section Content </section> -->
+        <!-- <section id="contact" class="contact section"> Contact Section Content </section> -->
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        document.querySelectorAll('.row a, .nav a').forEach(navLink => {
+            navLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                targetSection.classList.add('active');
+            });
+        });
+        document.querySelector('.section').classList.add('active');
+    </script>
+</body>
+
+</html>
